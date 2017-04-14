@@ -3,21 +3,23 @@
 <head>
   <meta charset="utf-8">
   
-  <title>脸趴</title>
+  <title>关于脸趴 | 脸趴</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   
   
   
-  <meta name="description" content="Faceparty">
-<meta property="og:type" content="website">
-<meta property="og:title" content="脸趴">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="“脸趴”是欢聚时刻科技于2017年4月推出的一款基于视频的泛娱乐社交平台。 脸趴，95    后必备社交神器！可以和陌生人一起视频群趴认识新朋友；随时随地和好友视频聊天、发送免费文字、图片、有趣的短视频等，开创了国内视频社交的先河！ 公司成立于2017年3月份，初创团队核心成员来自百度、今日头条、美图等国内知名互联网公司。">
+<meta name="keywords">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于脸趴">
+<meta property="og:url" content="http://yoursite.com/2017/04/14/about/index.html">
 <meta property="og:site_name" content="脸趴">
-<meta property="og:description" content="Faceparty">
+<meta property="og:description" content="“脸趴”是欢聚时刻科技于2017年4月推出的一款基于视频的泛娱乐社交平台。 脸趴，95    后必备社交神器！可以和陌生人一起视频群趴认识新朋友；随时随地和好友视频聊天、发送免费文字、图片、有趣的短视频等，开创了国内视频社交的先河！ 公司成立于2017年3月份，初创团队核心成员来自百度、今日头条、美图等国内知名互联网公司。">
+<meta property="og:updated_time" content="2017-04-14T11:30:10.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="脸趴">
-<meta name="twitter:description" content="Faceparty">
+<meta name="twitter:title" content="关于脸趴">
+<meta name="twitter:description" content="“脸趴”是欢聚时刻科技于2017年4月推出的一款基于视频的泛娱乐社交平台。 脸趴，95    后必备社交神器！可以和陌生人一起视频群趴认识新朋友；随时随地和好友视频聊天、发送免费文字、图片、有趣的短视频等，开创了国内视频社交的先河！ 公司成立于2017年3月份，初创团队核心成员来自百度、今日头条、美图等国内知名互联网公司。">
   
     <link rel="alternate" href="/atom.xml" title="脸趴" type="application/atom+xml">
   
@@ -42,9 +44,11 @@
   <link rel="stylesheet" href="/css/bootstrap.css" >
 
   
-    <link rel="stylesheet" href="/css/home.css" >
+    <link rel="stylesheet" href="/css/dialog.css">
   
 
+  
+    <link rel="stylesheet" href="/css/header-post.css" >
   
 
   
@@ -53,132 +57,105 @@
 
 
 
-  <body>
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
 
 
-  
-    <header id="header">
-
-  
-    <div id="intrologo" class="intro-logo">
-  
-
-    <canvas width="100%" height="100%"></canvas>
-    <script>
-      var c = document.getElementsByTagName('canvas')[0],
-          x = c.getContext('2d'),
-          w = window.innerWidth,
-          h = window.innerHeight,
-          pr = window.devicePixelRatio || 1,
-          f = 90,
-          q,
-          m = Math,
-          r = 0,
-          u = m.PI*2,
-          v = m.cos,
-          z = m.random
-      c.width = w*pr
-      c.height = h*pr
-      x.scale(pr, pr)
-      x.globalAlpha = 0.6
-
-      
-        function i(){
-            x.clearRect(0,0,w,h)
-            q=[{x:0,y:h*.7+f},{x:0,y:h*.7-f}]
-            while(q[1].x<w+f) d(q[0], q[1])
-        }
-        function d(i,j){   
-            x.beginPath()
-            x.moveTo(i.x, i.y)
-            x.lineTo(j.x, j.y)
-            var k = j.x + (z()*2-0.25)*f,
-                n = y(j.y)
-            x.lineTo(k, n)
-            x.closePath()
-            r-=u/-50
-            x.fillStyle = '#'+(v(r)*127+128<<16 | v(r+u/3)*127+128<<8 | v(r+u/3*2)*127+128).toString(16)
-            x.fill()
-            q[0] = q[1]
-            q[1] = {x:k,y:n}
-        }
-        function y(p){
-            var t = p + (z()*2-1.1)*f
-            return (t>h||t<0) ? y(p) : t
-        }
-        document.getElementById("intrologo").onclick = i
-        document.getElementById("intrologo").ontouchstart = i
-        i()
-      
-    </script>
-    
-
-    
-      <div id="homelogo" class="homelogo"> 
-    
-
-        
-          <div class="homelogoback" >
-            <h1><a href="#content" id="logo">脸趴</a></h1>
-            <h3>Faceparty</h3>
-            <h5>北京欢聚时刻科技有限公司</h5>
-            <!-- <p><a href="https://github.com/iTimeTraveler" target="_blank">Github</a></p> -->
-          </div>
-        
-    
-    </div>
-  </div>
-
-  <!-- 自适应主页背景大图 -->
-  
-
- <!-- home_logo_image居中 -->
- 
-    <script>
-        var homelogodiv = document.getElementById("homelogo");
-        if (document.all.homelogo.offsetWidth > document.body.clientWidth) {
-          homelogodiv.style.width = document.body.clientWidth + "px";
-          homelogodiv.style.marginLeft = document.body.clientWidth * -0.5 + "px";
-        } else {
-          homelogodiv.style.width = homelogodiv.clientWidth  + "px";
-          homelogodiv.style.marginLeft = (homelogodiv.clientWidth)  * -0.5 + "px";
-        }
-    </script>
-  
-
-  <div class="intro-navigate">
-      <p class="navigater-list">
-        
-          <a id="beautifont" class="main-nav-link" href="/">首页</a>
-        
-          <a id="beautifont" class="main-nav-link" href="/agreements">用户协议</a>
-        
-          <a id="beautifont" class="main-nav-link" href="/contact">联系我们</a>
-        
-          <a id="beautifont" class="main-nav-link" href="/about">关于我们</a>
-        
-      </p>
-  </div>
-
-</header>
   
   <div id="container">
     <div id="wrap">
       
+        <header>
+
+    <div id="allheader" class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="navbar-inner">
+          
+          <div class="container"> 
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            
+              <a class="brand" style="
+                 margin-top: 0px;"  
+                href="#" data-toggle="modal" data-target="#myModal" >
+                  <img width="124px" height="124px" alt="Hike News" src="/css/images/180.png">
+              </a>
+            
+            
+            <div class="navbar-collapse collapse">
+              <ul class="hnav navbar-nav">
+                
+                  <li> <a class="main-nav-link" href="/">首页</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/agreements">用户协议</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/contact">联系我们</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/about">关于我们</a> </li>
+                
+                  <li><div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="请输入关键词..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(无标题)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div></li>
+            </div>
+          </div>
+                
+      </div>
+    </div>
+
+</header>
+
+
+
+      
             
       <div id="content" class="outer">
         
-          <section id="main" style="float:none;">
-  
-    <article id="post-about"  class="article article-type-post" itemscope itemprop="blogPost" >
+          <section id="main" style="float:none;"><article id="post-about" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="article-inner">
     
     
       <header class="article-header">
         
   
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2017/04/14/about/">关于脸趴</a>
+    <h1 class="thumb" class="article-title" itemprop="name">
+      关于脸趴
     </h1>
   
 
@@ -206,18 +183,23 @@
     </footer>
   </div>
   
+    
+  
 </article>
 
 <!-- Table of Contents -->
 
-  
-
-
+  <aside id="sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    
+        <ol class="artnav">无</ol>
+    
+    </div>
+  </aside>
 </section>
         
       </div>
-      
-        <div align="center" style="margin-top: 30px;"><hr class="hr" style="margin:0px; height:3px;"></div>
       
       <footer id="footer">
   
@@ -316,9 +298,9 @@
 <script src="/js/bootstrap.js"></script>
 
 
-  <script src="/js/home.js"></script>
 
 
+  <script src="/js/dialog.js"></script>
 
 
 
